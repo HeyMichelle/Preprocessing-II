@@ -171,11 +171,21 @@ img {
 nav {
   margin: 2%;
 }
+@media (max-width: 500px) {
+  nav {
+    margin: 4%;
+  }
+}
 nav a {
   text-decoration: none;
   font-size: 1.6rem;
   color: #212529;
   padding-left: 30px;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 1.3rem;
+  }
 }
 .footer {
   width: 100%;
@@ -188,13 +198,20 @@ nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home .above-image {
+.home header .above-image {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .below-image {
+@media (max-width: 500px) {
+  .home header .above-image {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+.home header .below-image {
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {

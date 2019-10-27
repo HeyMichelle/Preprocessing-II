@@ -2,15 +2,21 @@
 nav {
     margin: 2%;
 
+    @media @mobile {
+        margin: 4%;
+    }
+
     a {
         text-decoration: none;
         font-size: 1.6rem;
         color: @font-color;
         padding-left: 30px;
+
+        @media @mobile {
+            font-size: 1.3rem;
+        }
     }
 
-    @media @mobile {
-
-    }
+   
 
 }
