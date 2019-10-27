@@ -173,6 +173,9 @@ nav {
 }
 nav a {
   text-decoration: none;
+  font-size: 1.6rem;
+  color: #212529;
+  padding-left: 30px;
 }
 .footer {
   width: 100%;
@@ -239,4 +242,12 @@ nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination button {
+  color: white;
+  background-color: #17A2B8;
+  width: 65%;
+  padding: 8px;
+  border-radius: 10px;
+  margin-left: 15px;
 }
