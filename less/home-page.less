@@ -1,16 +1,35 @@
 .home {
 
+  header {
+    .above-image {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 2px dashed @navigation-border;        
+    
+      @media @mobile {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    
+    .below-image {
+      border-bottom: 2px dashed @navigation-border;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      
     }
 
     .img-content {
@@ -56,6 +75,17 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+        button {
+          color: white;
+          background-color: @eastern-blue;
+          width: 65%;
+          padding: 8px;
+          border-radius: 10px;
+          margin-left: 15px;
+          .lighter(@eastern-blue, 20%);
+          
+        }
     }
   }
 }// home
